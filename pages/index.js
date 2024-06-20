@@ -34,7 +34,7 @@ export default function Home() {
           <tbody>
             {
               response?.properties?.timeseries?.map(val=>{
-                return <tr><td>{val.time.toLocaleString()}</td><td>{val.data.instant.details.air_temperature}</td><td>{val.data.next_1_hours?.summary.symbol_code}</td></tr>
+                return <tr><td>{new Date(val.time).toLocaleString()}</td><td>{val.data.instant.details.air_temperature}</td><td>{val.data.next_1_hours?.summary.symbol_code}</td></tr>
               })
             }
           </tbody>
