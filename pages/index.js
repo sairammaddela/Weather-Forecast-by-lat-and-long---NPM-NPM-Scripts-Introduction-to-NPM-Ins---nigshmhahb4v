@@ -20,7 +20,7 @@ export default function Home() {
         <h1>Weather Forecast</h1>
         <form onSubmit={submitHandler}> 
         <label>Latitude<input className="latitude"/></label>
-        <label>Latitude<input className="latitude"/></label>
+        <label>Longitude<input className="longitude"/></label>
         <button type="submit">Get Forecast</button>
         </form>
         <table>
